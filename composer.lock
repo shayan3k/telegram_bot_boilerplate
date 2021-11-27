@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dcf4fa4a61f40ad71ab4bc37dd5d28c7",
+    "content-hash": "bbbfd325f044a07d861c10658c9e2ed1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -121,6 +121,129 @@
                 }
             ],
             "time": "2021-08-15T20:50:18+00:00"
+        },
+        {
+            "name": "danog/madelineproto",
+            "version": "6.0.115.9998",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/danog/MadelineProto.git",
+                "reference": "4b5799b4919d6c630285f70741d8babbb0e80287"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/danog/MadelineProto/zipball/4b5799b4919d6c630285f70741d8babbb0e80287",
+                "reference": "4b5799b4919d6c630285f70741d8babbb0e80287",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-fileinfo": "*",
+                "ext-filter": "*",
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-xml": "*",
+                "ext-zlib": "*",
+                "phabel/phabel": "^1.0",
+                "php": "*"
+            },
+            "conflict": {
+                "ext-pthreads": "*",
+                "krakjoe/pthreads-polyfill": "*"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4",
+                "danog/phpdoc": "^0.1.7",
+                "ext-ctype": "*",
+                "phabel/phabel": "^1",
+                "phpdocumentor/reflection-docblock": "^5.2"
+            },
+            "suggest": {
+                "ext-libtgvoip": "Install the php-libtgvoip extension to make phone calls (https://github.com/danog/php-libtgvoip)",
+                "ext-pdo": "Install pdo extension to support database used as cache"
+            },
+            "type": "project",
+            "extra": {
+                "phabel": {
+                    "revision": 0,
+                    "require": {
+                        "danog/primemodule": "^1",
+                        "erusev/parsedown": "^1.7",
+                        "symfony/polyfill-mbstring": "*",
+                        "amphp/amp": "^2",
+                        "amphp/http-client": "^4",
+                        "amphp/socket": "^1",
+                        "amphp/dns": "^1",
+                        "amphp/byte-stream": "^1",
+                        "amphp/file": "^1",
+                        "amphp/mysql": "^2",
+                        "amphp/postgres": "^1.2",
+                        "danog/dns-over-https": "^0.2",
+                        "amphp/http-client-cookies": "^1",
+                        "danog/tg-file-decoder": "^0.1",
+                        "danog/magicalserializer": "^1.0",
+                        "league/uri": "^6",
+                        "danog/ipc": "^0.1",
+                        "amphp/log": "^1.1",
+                        "danog/loop": "^0.1.0",
+                        "danog/tgseclib": "^3",
+                        "amphp/redis": "^1.0",
+                        "symfony/polyfill-php80": "^1.18",
+                        "amphp/websocket-client": "^1.0",
+                        "psr/http-factory": "^1.0",
+                        "psr/log": "^1"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "danog\\MadelineProto\\": "src/danog/MadelineProto"
+                },
+                "files": [
+                    "src/BigIntegor.php",
+                    "src/YieldReturnValue.php",
+                    "src/polyfill.php",
+                    "___transpiledWithPhabel.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Daniil Gentili",
+                    "email": "daniil@daniil.it"
+                }
+            ],
+            "description": "PHP implementation of telegram's MTProto protocol.",
+            "homepage": "https://docs.madelineproto.xyz",
+            "keywords": [
+                "GB",
+                "Messenger",
+                "audio",
+                "bytes",
+                "client",
+                "files",
+                "mtproto",
+                "php",
+                "protocol",
+                "stickers",
+                "telegram",
+                "video"
+            ],
+            "support": {
+                "issues": "https://github.com/danog/MadelineProto/issues",
+                "source": "https://github.com/danog/MadelineProto/tree/6.0.115.9998"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/danog",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-10-12T19:19:11+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -2250,6 +2373,155 @@
                 "source": "https://github.com/opis/closure/tree/3.6.2"
             },
             "time": "2021-04-09T13:42:10+00:00"
+        },
+        {
+            "name": "phabel/phabel",
+            "version": "1.0.41.74",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phabelio/phabel.git",
+                "reference": "75c84c6b228057e29a378708d2db93462e03c490"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phabelio/phabel/zipball/75c84c6b228057e29a378708d2db93462e03c490",
+                "reference": "75c84c6b228057e29a378708d2db93462e03c490",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0",
+                "ext-json": "*",
+                "ext-tokenizer": "*",
+                "php": ">=7.4 <7.5"
+            },
+            "provide": {
+                "phabelio/phabel": "self.version"
+            },
+            "require-dev": {
+                "amphp/file": "^2.0",
+                "bamarni/composer-bin-plugin": "^1.4"
+            },
+            "bin": [
+                "bin/phabel"
+            ],
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Phabel\\Composer\\Plugin",
+                "plugin-modifies-downloads": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phabel\\": "src",
+                    "PhabelVendor\\Amp\\": [
+                        "vendor-bundle/amphp/amp/lib"
+                    ],
+                    "PhabelVendor\\Amp\\ByteStream\\": [
+                        "vendor-bundle/amphp/byte-stream/lib"
+                    ],
+                    "PhabelVendor\\Amp\\Parallel\\": [
+                        "vendor-bundle/amphp/parallel/lib"
+                    ],
+                    "PhabelVendor\\Amp\\Parser\\": [
+                        "vendor-bundle/amphp/parser/lib"
+                    ],
+                    "PhabelVendor\\Amp\\Process\\": [
+                        "vendor-bundle/amphp/process/lib"
+                    ],
+                    "PhabelVendor\\Amp\\Serialization\\": [
+                        "vendor-bundle/amphp/serialization/src"
+                    ],
+                    "PhabelVendor\\Amp\\Sync\\": [
+                        "vendor-bundle/amphp/sync/src"
+                    ],
+                    "PhabelVendor\\PhpParser\\": [
+                        "vendor-bundle/phabel/php-parser/lib/PhpParser"
+                    ],
+                    "PhabelVendor\\Psr\\Container\\": [
+                        "vendor-bundle/psr/container/src/"
+                    ],
+                    "PhabelVendor\\Psr\\Log\\": [
+                        "vendor-bundle/psr/log/Psr/Log/"
+                    ],
+                    "PhabelVendor\\Symfony\\Component\\Console\\": [
+                        "vendor-bundle/symfony/console/"
+                    ],
+                    "Symfony\\Polyfill\\Ctype\\": [
+                        "vendor-bundle/symfony/polyfill-ctype/"
+                    ],
+                    "Symfony\\Polyfill\\Intl\\Grapheme\\": [
+                        "vendor-bundle/symfony/polyfill-intl-grapheme/"
+                    ],
+                    "Symfony\\Polyfill\\Intl\\Normalizer\\": [
+                        "vendor-bundle/symfony/polyfill-intl-normalizer/"
+                    ],
+                    "Symfony\\Polyfill\\Mbstring\\": [
+                        "vendor-bundle/symfony/polyfill-mbstring/"
+                    ],
+                    "Symfony\\Polyfill\\Php73\\": [
+                        "vendor-bundle/symfony/polyfill-php73/"
+                    ],
+                    "Symfony\\Polyfill\\Php80\\": [
+                        "vendor-bundle/symfony/polyfill-php80/"
+                    ],
+                    "PhabelVendor\\Symfony\\Component\\Process\\": [
+                        "vendor-bundle/symfony/process/"
+                    ],
+                    "PhabelVendor\\Symfony\\Contracts\\Service\\": [
+                        "vendor-bundle/symfony/service-contracts/"
+                    ],
+                    "PhabelVendor\\Symfony\\Component\\String\\": [
+                        "vendor-bundle/symfony/string/"
+                    ]
+                },
+                "files": [
+                    "src/guard.php",
+                    "vendor-bundle/amphp/amp/lib/functions.php",
+                    "vendor-bundle/amphp/amp/lib/Internal/functions.php",
+                    "vendor-bundle/amphp/byte-stream/lib/functions.php",
+                    "vendor-bundle/amphp/parallel/lib/Context/functions.php",
+                    "vendor-bundle/amphp/parallel/lib/Sync/functions.php",
+                    "vendor-bundle/amphp/parallel/lib/Worker/functions.php",
+                    "vendor-bundle/amphp/process/lib/functions.php",
+                    "vendor-bundle/amphp/serialization/src/functions.php",
+                    "vendor-bundle/amphp/sync/src/functions.php",
+                    "vendor-bundle/amphp/sync/src/ConcurrentIterator/functions.php",
+                    "vendor-bundle/symfony/deprecation-contracts/function.php",
+                    "vendor-bundle/symfony/polyfill-ctype/bootstrap.php",
+                    "vendor-bundle/symfony/polyfill-intl-grapheme/bootstrap.php",
+                    "vendor-bundle/symfony/polyfill-intl-normalizer/bootstrap.php",
+                    "vendor-bundle/symfony/polyfill-mbstring/bootstrap.php",
+                    "vendor-bundle/symfony/polyfill-php73/bootstrap.php",
+                    "vendor-bundle/symfony/polyfill-php80/bootstrap.php",
+                    "vendor-bundle/symfony/string/Resources/functions.php"
+                ],
+                "classmap": [
+                    "vendor-bundle/symfony/polyfill-intl-normalizer/Resources/stubs",
+                    "vendor-bundle/symfony/polyfill-php73/Resources/stubs",
+                    "vendor-bundle/symfony/polyfill-php80/Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniil Gentili",
+                    "email": "daniil@daniil.it"
+                }
+            ],
+            "description": "Write and deploy modern PHP 8 code, today.",
+            "support": {
+                "issues": "https://github.com/phabelio/phabel/issues",
+                "source": "https://github.com/phabelio/phabel/tree/1.0.41.74"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/danog",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-10-05T17:51:34+00:00"
         },
         {
             "name": "phpoption/phpoption",
